@@ -1,0 +1,8 @@
+The sum of revenue by revenue field 432720192875.0000000000
+The sum of revenue by revenue_adj field: 558125171109.8245849609
+The director has the most movies is: Woody (46 movies)
+The actor or actress has the most movies is: Robert (72 movies)
+The sum of revenue by revenue field 432720192875.0000000000
+The sum of revenue by revenue_adj field: 558125171109.8245849609
+The director has the most movies is: Woody (46 movies)
+The actor or actress has the most movies is: Robert (72 movies)
