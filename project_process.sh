@@ -121,7 +121,7 @@ awk -F, '{sum+=$5} END {printf "The sum of revenue by revenue field %.10f\n", su
 awk -F, '{sum+=$21} END {printf "The sum of revenue by revenue_adj field: %.10f\n", sum}' main_data.csv >> single_output.txt
 
 # Top 10 profit by revenue and budget fields
-(head -n 1 main_data.csv && tail -n +2 main_data.csv | awk -F, '{print "%.10f\n", ($5 - $4) "," $0}' |sort -t, -k1,1nr | cut -d, -f2- ) | head > top_ten_profit_by_revenue.csv
+(head -n 1 main_data.csv && tail -n +2 main_data.csv | awk -F, '{print "%.10f\n", ($5 - $4) "," $0}' |sort -t, -k1,1gr | cut -d, -f2- ) | head > top_ten_profit_by_revenue.csv
 
 # Top 10 profit by revenue_adj and budget_adj fields
 (head -n 1 main_data.csv && tail -n +2 main_data.csv | awk -F, '{print "%.10f\n", ($21 - $20) "," $0 }' | sort -t, -k1,1 -gr | cut -d, -f2- ) | head > top_ten_profit_by_revenue_adj.csv
